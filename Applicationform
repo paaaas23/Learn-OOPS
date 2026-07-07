@@ -1,0 +1,22 @@
+class appform{
+    String name;
+    int roll;
+    String city;
+    public void display(){
+        System.out.println("Name: "+name);
+        System.out.println("RollNo: "+roll);
+        System.out.println("City: "+city);
+    }
+    public static void main(String[] args){
+        appform obj1=new appform();
+        obj1.name="Prasanna";
+        obj1.roll=123;
+        obj1.city="Chennai";
+        obj1.display();
+        appform obj2=new appform();
+        obj1.name="Moorthi";
+        obj1.roll=124;
+        obj1.city="Avadi";
+        obj1.display();
+    }
+}
