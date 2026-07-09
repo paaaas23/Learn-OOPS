@@ -1,0 +1,23 @@
+ class student{
+    String name;
+    int rollno;
+    int mark;
+    student(){
+        this.name="Prasanna";
+        this.rollno=123;
+        this.mark=100;
+    }
+    void display(){
+        System.out.print("Welcome to our channel :"+this.name);
+    }
+ }
+ class sum{
+    public static void main(String[] args){
+        student obj=new student();
+        //System.out.println(obj.name);
+        //System.out.println(obj.rollno);
+        //System.out.println(obj.mark);
+        obj.display();
+
+    }
+ }
