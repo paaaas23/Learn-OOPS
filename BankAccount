@@ -1,0 +1,32 @@
+class calculator{
+    int accountno;
+    int balance;
+    public void deposite(int ammount){
+        balance+=ammount;
+        System.out.print("Money add successfully.");
+    }
+    public void withdraw(int ammount){
+        int money=this.balance;
+        if(money<ammount){
+            System.out.print("Insufficient balance.");
+        }else{
+            balance=money-ammount;
+            System.out.print(ammount+" ruppes withdraw");
+
+        }
+    }public void display(){
+        System.out.print(this.balance);
+    }
+    calculator(int accountno,int balance){
+        this.accountno=accountno;
+        this.balance=balance;
+
+    }
+}
+class sum{
+    public static void main(String[] args){
+        calculator obj=new calculator(101,5000);
+        obj.withdraw(8000);
+        obj.display();
+    }
+}
